@@ -1,22 +1,56 @@
-.presentation .competemce{
-
+.c{
+float: center;
 }
-.lol img{
-	width:30px;
+ul.police li{
+     position:relative;float:left;
+     width:100px;height:100px;padding:10px;list-style:none;
+}
+/*permet de créer deux lignes*/
+ul.police li:nth-child(4n){clear:left;} 
+          
+ul.police li a{
+     display:block;overflow:hidden;
+     width:100px;height:100px;
+     margin-top:0px;margin-left:0px;
+     border:0px solid rgba(0,0,0,0.7);
+     transition-property:width,height,margin,z-index,border;
+     transition-duration:0.4s;
+}
+
+ul.police li a:hover{
+     position:absolute;
+     width:300px;height:300px;
+     margin-top:-56px;margin-left:-56px;
+     z-index:100;
+     border:6px solid rgba(0,0,0,0.7);
+}
+          
+ul.police li a img{
+     position:absolute;
+     width:100px;height:100px;z-index:20;
+     transition-property:width,height,z-index;
+     transition-duration:0.4s;
+}
+          
+ul.police li a:hover img{
+     width:300px;height:300px;
+     z-index:100;
 }
 body {
 	font-family: 'Verdana',calibri,serif;
-	font-size: 13px;
-	margin: auto;
+	font-size: 20px;
+	margin: 0 auto;
 	padding: 0px;
-	width:1500px;
+}
+.lol img{
+	width:30px;
 }
 .blanc2{
 
 	color: brown;
 }
 .blanc{
-font-size: 15px;
+font-size: 20px;
 	color: brown;
 	text-align: center;
 }
@@ -94,22 +128,20 @@ nav a{
 	border-top: 5px solid #e44d26;
 	background-color: RGBa(228,77,38,0.15);
 }
+.menu-5:hover{
+	border-top: 5px solid #8B008B;
+	background-color: RGBa(200,52,28,0.15);
+}
 /*pas obliger*/
 nav li:hover a{
 	padding: 15px 30px 20px 30px;
 }
 section{
-	width: 100%;
+	margin: 0 auto;
+	width: 1000px;
 	min-height: 300px;
 	padding-bottom:10px;
-
-}
-li {
-    display: list-item;
-}
-ul{
-	    display: block;
-    list-style-type: disc;
+	margin-bottom: 10px;
 }
 .sec{
 	margin: 0px 3%;
@@ -150,9 +182,22 @@ div.sousleft, div.sousright, h3{
 	background-color: RGBa(228,77,128,0.15);
 	margin-bottom: 0px;
 }
+.photo{
+	border-top: 5px solid #e44d96;
+	background-color: RGBa(228,77,128,0.15);
+	margin-bottom: 0px;
+		padding-bottom: 100px;
+}
 .leftexp{
 	width: 45%;
 	float: left;
+}
+.wrapper{
+	max-width:580px;
+	
+}
+input{
+	width: 90%;
 }
 .rightexp{
 width:50%;
@@ -194,11 +239,9 @@ margin-left: 5%;
 	background-image:url(background3.jpg);
 	margin-bottom: 0px;
 	padding-bottom: 100px;
-width: 100%;
 }
 .japon p{
-	color : blue;
-	font-family : verdana;
+	color : #000080;
 }
 .rouge{
 		border-top: 5px solid #e44d96;
@@ -224,6 +267,9 @@ width: 100%;
 header {
   height: 50px;
 }
+	section{
+		width:100%;
+	}
 	h1{
 		font-size: 28px;
 		margin: 20px, 0px, 0px, 0px;
