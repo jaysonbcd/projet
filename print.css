@@ -1,0 +1,34 @@
+.etatcivil img{
+	    width: 100%;
+    max-width: 400px;
+}
+.cv{
+	background-color: RGBa(70,120,120,0.15);
+  margin-bottom: 0px;align-content
+}
+.menu-6:hover{
+	border-top: 5px solid #87CEEB;
+	background-color: RGBa(70,120,120,0.15);
+}
+body {
+    font-family: 'Verdana',calibri,serif;
+    font-size: 20px;
+}
+header{
+  height: 100px;
+  display: none;
+}
+footer{
+  height: 80px;
+	padding-top: 30px;
+	text-align: center;
+	background-color : #C5C5C5;
+	border-top: 2px solid #AAA;
+  display: none;
+}
+nav{
+  display: none;
+  width: 100%;
+	background-color: #424558;
+	font-weight: normal;
+}
